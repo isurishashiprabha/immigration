@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title> ATA Immigration | About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="pageLoader">
+        <div class="loader-logo"><i class="fa-solid fa-globe"></i> Apex <span>Trust</span> Ardent</div>
+        <div class="loader-bar">
+            <div class="loader-bar-fill"></div>
+        </div>
+        <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><i class="fa-solid fa-globe"></i> Apex Trust Ardent</a>
+            <button id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="canada.html">Canada <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="canada.html#inquiry" onclick="selectService('Express Entry')">Express Entry</a></li>
+                        <li><a href="canada.html#inquiry" onclick="selectService('Provincial Nominee Program (PNP)')">Provincial Nominee</a></li>
+                        <li><a href="canada.html#inquiry" onclick="selectService('Student Visa')">Student Visa</a></li>
+                        <li><a href="canada.html#inquiry" onclick="selectService('Family Sponsorship')">Family Sponsorship</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="other-countries.html">Other Countries <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="other-countries.html?country=Australia#inquiry">Australia</a></li>
+                        <li><a href="other-countries.html?country=United%20Kingdom#inquiry">United Kingdom</a></li>
+                        <li><a href="other-countries.html?country=New%20Zealand#inquiry">New Zealand</a></li>
+                        <li><a href="other-countries.html?country=United%20States#inquiry">United States</a></li>
+                        <li><a href="other-countries.html?country=Europe#inquiry">Europe</a></li>
+                    </ul>
+                </li>
+                <li><a href="legal-services.html">Legal Service</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="consultation.html">Book Consultation</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <a href="login.html" class="login-btn"><i class="fa-solid fa-user"></i></a>
+                <button id="darkModeBtn"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero canada-hero" style="background-image: url(img/about.jpg); 
+        margin-top: 0;
+        height: 100vh;  
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;">
+
+        <div class="hero-content">
+            <h1><i class="fa-solid fa-circle-info"></i> About Us</h1>
+            <p>Your Trusted Partner for Immigration, Education, and Global Opportunities.</p>
+        </div>
+    </section>
+
+    <section class="about-story">
+        <div class="about-text">
+            <span class="about-badge">WHO WE ARE</span>
+            <h2>Helping Dreams Cross Borders</h2>
+            <p>At our organization, we believe that every individual deserves the opportunity to pursue a better future,
+                whether through education, employment, business expansion, or permanent settlement abroad. Since our
+                establishment,
+                we have been committed to providing professional immigration and consultancy services designed to
+                simplify complex processes
+                and help clients achieve their international ambitions with confidence. Our approach is built on trust,
+                transparency,
+                and personalized support, ensuring that every client receives accurate guidance and dedicated assistance
+                throughout their
+                journey.</p>
+            <p>We understand that moving to another country is one of the most important decisions a person can make.
+                It involves careful planning, extensive documentation, and a clear understanding of immigration policies
+                and requirements.
+                Our experienced team works closely with each client to assess their qualifications, career goals,
+                educational background,
+                and long-term aspirations. By taking a personalized approach, we are able to recommend the most suitable
+                pathways and develop
+                strategies that maximize the chances of success while minimizing unnecessary delays and complications.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="img/about2.jpg" alt="About Us">
+        </div>
+    </section>
+
+    <section class="mission-section">
+        <div class="mission-card"><i class="fa-solid fa-bullseye"></i>
+            <h3>Our Mission</h3>
+            <p>
+                To provide reliable, transparent, and professional immigration
+                and consultancy services for clients worldwide.</p>
+        </div>
+
+        <div class="mission-card"><i class="fa-solid fa-eye"></i>
+            <h3>Our Vision</h3>
+            <p>
+                To become a globally trusted consultancy helping people
+                build successful futures across international borders.</p>
+        </div>
+
+        <div class="mission-card"><i class="fa-solid fa-handshake"></i>
+            <h3>Our Values</h3>
+            <p>
+                Integrity, professionalism, client satisfaction,
+                and commitment to excellence in every service we provide.</p>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <div class="why-left">
+            <span class="why-badge">WHY CHOOSE US</span>
+            <h2>Your Success Is Our Priority</h2>
+            <p>We provide personalized solutions and professional support
+                throughout every stage of your immigration journey.</p>
+            <div class="features">
+                <div class="feature"><i class="fa-solid fa-check"></i><span>Experienced Consultants</span></div>
+                <div class="feature"><i class="fa-solid fa-check"></i><span>Transparent Process</span></div>
+                <div class="feature"><i class="fa-solid fa-check"></i><span>Client-Focused Service</span></div>
+                <div class="feature"><i class="fa-solid fa-check"></i><span>Global Opportunities</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-box"><i class="fa-solid fa-users"></i>
+            <h2>5000+</h2>
+            <p>Satisfied Clients</p>
+        </div>
+        <div class="stat-box"><i class="fa-solid fa-globe"></i>
+            <h2>20+</h2>
+            <p>Countries Served</p>
+        </div>
+        <div class="stat-box"><i class="fa-solid fa-award"></i>
+            <h2>98%</h2>
+            <p>Success Rate</p>
+        </div>
+        <div class="stat-box"><i class="fa-solid fa-briefcase"></i>
+            <h2>10+</h2>
+            <p>Years Experience</p>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="img/team1.jpg" alt="Team Member">
+                <h3>John Smith</h3>
+                <p>Senior Immigration Consultant</p>
+                <i class="fa-solid fa-envelope"> </i>
+                <i class="fa-brands fa-linkedin"> </i>
+                <p class="team-desc">Helps students identify suitable academic pathways and secure admissions at leading
+                    institutions.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="img/team2.jpg" alt="Team Member">
+                <h3>James Anderson</h3>
+                <p>Senior Lawyer</p>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <p class="team-desc">Specializes in immigration law, legal documentation, case reviews, and
+                    compliance-related matters.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="img/team3.jpg" alt="Team Member">
+                <h3>Emma Smith</h3>
+                <p>UK & Europe Consultant</p>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <p class="team-desc">Assists students and professionals seeking study, work, and settlement
+                    opportunities across Europe.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="img/team4.jpg" alt="Team Member">
+                <h3>Olivia Davis</h3>
+                <p>Helthcare Migration Expert</p>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <p class="team-desc">Provides expert guidance for nurses, caregivers, and healthcare professionals
+                    pursuing overseas careers.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="img/team5.jpg" alt="Team Member">
+                <h3>Daniel Walker</h3>
+                <p>Education Consultant</p>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <p class="team-desc">Helps students identify suitable academic pathways and secure admissions at leading
+                    institutions.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="img/team6.jpg" alt="Team Member">
+                <h3>Michael Brown</h3>
+                <p>Legal Advisor</p>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-linkedin"></i><br>
+                <p class="team-desc">Offers professional legal guidance and strategic support for complex immigration
+                    and visa matters.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Accreditations</span>
+                <h2>Professional Certifications & Accreditations</h2>
+                <p>Our credentials demonstrate our commitment to the highest industry standards</p>
+            </div>
+
+            <div class="cert-grid">
+                <div class="cert-card fade-in">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h4>RCIC – Canada</h4>
+                    <p>Regulated Canadian Immigration Consultants – highest immigration certification in Canada.</p>
+                </div>
+
+                <div class="cert-card fade-in">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <h4>CICC Certification</h4>
+                    <p>A professional license issued by the College of Immigration and Citizenship Consultants (Canada).
+                    </p>
+                </div>
+
+                <div class="cert-card fade-in">
+                    <i class="fa-solid fa-award"></i>
+                    <h4>MARA – Australia</h4>
+                    <p>Migration Agents Registration Authority – official Australian migration agent certification.</p>
+                </div>
+
+                <div class="cert-card fade-in">
+                    <i class="fa-solid fa-award"></i>
+                    <h4>ISO 9001 (Quality Mgt. System)</h4>
+                    <p>An international standard that shows the company follows strong quality and high-quality services
+                        for clients.</p>
+                </div>
+
+                <div class="cert-card fade-in">
+                    <i class="fa-solid fa-certificate"></i>
+                    <h4>OISC – UK</h4>
+                    <p>Office of the Immigration Services Commissioner – authorized UK immigration adviser.</p>
+                </div>
+
+                <div class="cert-card fade-in">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <h4>GDPR Compliance</h4>
+                    <p>A data protection standard required in Europe that ensures all personal information is handled
+                        legally and securely.</p>
+                </div>
+
+                <div class="cert-card fade-in">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h4>Sri Lanka Bar</h4>
+                    <p>Registered legal practitioners with the Bar Association of Sri Lanka.</p>
+                </div>
+                
+                <div class="cert-card fade-in">
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>ICCRC Member</h4>
+                    <p>Immigration Consultants of Canada Regulatory Council – active member in good standing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="success-stories">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Excellent service and professional guidance throughout the process."</p>
+                <h4>- Sarah M.</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>"Highly recommended for anyone planning to study or migrate abroad."</p>
+                <h4>- David K.</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>"The team was supportive and transparent from start to finish."</p>
+                <h4>- Emily R.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2><i class="fa-solid fa-circle-question"></i> Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-btn">
+                What does your company do?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-content">
+                <p>We are an immigration and consultancy service provider helping clients with visas, education
+                    pathways, and international career opportunities.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-btn">
+                How experienced is your team?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-content">
+                <p>Our team has many years of experience in immigration consulting, visa processing, and client guidance
+                    for multiple countries.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-btn">
+                Which countries do you assist with?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-content">
+                <p>We assist clients applying to Canada, Australia, the UK, New Zealand, Germany, UAE, and several other
+                    popular destinations.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-btn">
+                How can I start the process with you?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-content">
+                <p>You can start by contacting us through our inquiry form, email, or phone to schedule an initial
+                    consultation.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-btn">
+                What makes your service different?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-content">
+                <p>We provide personalized guidance, clear communication, and step-by-step support throughout your
+                    immigration journey.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-btn">
+                Do you offer document guidance?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-content">
+                <p>Yes, we guide you in preparing and organizing all required documents to ensure a smooth application
+                    process.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="chatbot-bubble" id="chatbotBubble" onclick="toggleChatbot()">
+        <i class="fa-solid fa-comments"></i>
+        <span class="chat-badge">1</span>
+    </div>
+    <div class="chatbot" id="chatbot">
+        <div class="chat-header">
+            <div class="chat-avatar"><i class="fa-solid fa-robot"></i></div>
+            <div>
+                <strong>Ardent AI Assistant</strong>
+                <span class="chat-status">Online • 24/7 Support</span>
+            </div>
+            <button onclick="toggleChatbot()"><i class="fa-solid fa-times"></i></button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-msg bot">
+                <div class="msg-bubble">👋 Hi! I'm Ardent, Welcome to Ardent Trust Ardent!</div>
+            </div>
+            <div class="chat-quick-replies">
+                <button onclick="quickReply('About Company')">🏢 About Us</button>
+                <button onclick="quickReply('Mission and Vision')">🎯 Mission</button>
+                <button onclick="quickReply('Our Services')">🌍 Services</button>
+                <button onclick="quickReply('Our Team')">👨‍💼 Team</button>
+                <button onclick="quickReply('Contact Information')">📞 Contact</button>
+                <button onclick="quickReply('Book Consultation')">📅 Consultation</button>
+            </div>
+            <br>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="chatEnter(event)" />
+            <button onclick="sendChat()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3><i class="fa-solid fa-globe"></i>Apex Trust Ardent</h3>
+                <p>Trusted immigration consultants helping individuals and families achieve their dreams in
+                    Canada, Australia, UK, USA and Europe.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="canada.html">Canada</a></li>
+                    <li><a href="other-countries.html">Other Countries</a></li>
+                    <li><a href="legal-services.html">Legal Service</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="consultation.html">Book Consultation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +94 11 234 5678</p>
+                <p><i class="fa-solid fa-envelope"></i> info@apextrust.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Colombo, Sri Lanka</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Office Hours</h3>
+                <p>Mon - Fri : 9.00 AM - 6.00 PM</p>
+                <p>Saturday : 9.00 AM - 1.00 PM</p>
+                <p>Sunday : Closed</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <hr>
+        <p class="copyright"> © 2026 Apex Trust Ardent Immigration.All Rights Reserved.</p>
+    </footer>
+
+    <button id="topBtn">
+        <i class="fa-solid fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+
+</html>

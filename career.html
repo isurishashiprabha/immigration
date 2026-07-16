@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <title> ATA Immigration | Career</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="pageLoader">
+    <div class="loader-logo"><i class="fa-solid fa-globe"></i> Apex <span>Trust</span> Ardent</div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+    <div class="loader-dots"><span></span><span></span><span></span></div>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><i class="fa-solid fa-globe"></i> Apex Trust Ardent</a>
+      <button id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="canada.html">Canada <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="canada.html#inquiry" onclick="selectService('Express Entry')">Express Entry</a></li>
+            <li><a href="canada.html#inquiry" onclick="selectService('Provincial Nominee Program (PNP)')">Provincial
+                Nominee</a></li>
+            <li><a href="canada.html#inquiry" onclick="selectService('Student Visa')">Student Visa</a></li>
+            <li><a href="canada.html#inquiry" onclick="selectService('Family Sponsorship')">Family Sponsorship</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="other-countries.html">Other Countries <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="other-countries.html?country=Australia#inquiry">Australia</a></li>
+            <li><a href="other-countries.html?country=United%20Kingdom#inquiry">United Kingdom</a></li>
+            <li><a href="other-countries.html?country=New%20Zealand#inquiry">New Zealand</a></li>
+            <li><a href="other-countries.html?country=United%20States#inquiry">United States</a></li>
+            <li><a href="other-countries.html?country=Europe#inquiry">Europe</a></li>
+          </ul>
+        </li>
+        <li><a href="legal-services.html">Legal Service</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="consultation.html">Book Consultation</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search...">
+        </div>
+        <a href="login.html" class="login-btn"><i class="fa-solid fa-user"></i></a>
+        <button id="darkModeBtn"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero canada-hero" style="background-image: url(img/career.jpg); 
+        margin-top: 0;
+        height: 100vh; 
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;">
+
+    <div class="hero-content">
+      <h1><i class="fa-solid fa-briefcase"></i> Career Opportunities</h1>
+      <p>Join our team and build your future in the global immigration industry.</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Why Work With Us?</h2>
+
+    <div class="service-container">
+
+      <div class="card">
+        <h3><i class="fa-solid fa-earth-americas"></i><br>Global Exposure</h3>
+        <p>Work with international clients from Canada, UK, Australia and more.</p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fa-solid fa-people-group"></i><br>Team Environment</h3>
+        <p>Supportive and professional working environment with growth opportunities.</p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fa-solid fa-chart-line"></i><br>Career Growth</h3>
+        <p>We provide training and career development for all employees.</p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fa-solid fa-hand-holding-dollar"></i><br>Attractive Salary</h3>
+        <p>Competitive salary packages with performance-based incentives.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Current Job Openings</h2>
+
+    <div class="service-container">
+
+      <div class="card">
+        <h3><i class="fa-solid fa-user-tie"></i><br>Immigration Consultant</h3>
+        <p>Guide clients through visa and immigration processes.</p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fa-solid fa-headset"></i><br>Customer Support</h3>
+        <p>Handle client inquiries and provide professional support.</p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fa-solid fa-laptop"></i><br>Marketing Executive</h3>
+        <p>Manage digital marketing and social media campaigns.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="jobs-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Open Positions</span>
+        <h2>Current Job Openings</h2>
+        <p>Find your perfect role and join our growing team</p>
+      </div>
+
+      <div class="jobs-filter">
+        <button class="filter-btn active" onclick="filterJobs('all', this)">All Positions</button>
+        <button class="filter-btn" onclick="filterJobs('consulting', this)">Consulting</button>
+        <button class="filter-btn" onclick="filterJobs('legal', this)">Legal</button>
+        <button class="filter-btn" onclick="filterJobs('admin', this)">Admin</button>
+        <button class="filter-btn" onclick="filterJobs('remote', this)">Remote</button>
+      </div>
+
+      <div id="jobsList">
+        <div class="job-card fade-in" data-category="consulting">
+          <div class="job-top">
+            <div class="job-info">
+              <h3>Senior Immigration Consultant (RCIC)</h3>
+              <div class="job-tags">
+                <span class="job-tag">Full-Time</span>
+                <span class="job-tag">Colombo</span>
+                <span class="job-tag urgent">Urgent</span>
+              </div>
+              <div class="salary-range"><i class="fa-solid fa-money-bill"></i> LKR 150,000 – 250,000/month</div>
+            </div>
+            <a href="#applyForm" class="apply-btn" onclick="setJobTitle('Senior Immigration Consultant (RCIC)')">Apply
+              Now</a>
+          </div>
+          <p class="job-desc">We're seeking an experienced RCIC-certified immigration consultant to lead complex
+            Canadian immigration cases including Express Entry, PNP, and business immigration. You will manage a
+            portfolio of clients and mentor junior consultants.</p>
+          <div class="job-requirements">
+            <span class="job-req">RCIC Certification</span>
+            <span class="job-req">5+ years experience</span>
+            <span class="job-req">Express Entry expertise</span>
+            <span class="job-req">Client management</span>
+          </div>
+        </div>
+
+        <div class="job-card fade-in" data-category="legal">
+          <div class="job-top">
+            <div class="job-info">
+              <h3>Immigration Lawyer / Legal Advisor</h3>
+              <div class="job-tags">
+                <span class="job-tag">Full-Time</span>
+                <span class="job-tag">Colombo</span>
+              </div>
+              <div class="salary-range"><i class="fa-solid fa-money-bill"></i> LKR 180,000 – 300,000/month</div>
+            </div>
+            <a href="#applyForm" class="apply-btn" onclick="setJobTitle('Immigration Lawyer / Legal Advisor')">Apply
+              Now</a>
+          </div>
+          <p class="job-desc">Qualified attorney needed to handle immigration appeals, visa refusals, refugee law, and
+            deportation defense cases. You will represent clients at immigration tribunals and provide written legal
+            opinions for complex cases.</p>
+          <div class="job-requirements">
+            <span class="job-req">LLB (Hons) or above</span>
+            <span class="job-req">Bar Association membership</span>
+            <span class="job-req">Immigration law experience</span>
+            <span class="job-req">Appeals experience</span>
+          </div>
+        </div>
+
+        <div class="job-card fade-in" data-category="consulting">
+          <div class="job-top">
+            <div class="job-info">
+              <h3>Australia & New Zealand Migration Specialist</h3>
+              <div class="job-tags">
+                <span class="job-tag">Full-Time</span>
+                <span class="job-tag">Colombo</span>
+              </div>
+              <div class="salary-range"><i class="fa-solid fa-money-bill"></i> LKR 120,000 – 200,000/month</div>
+            </div>
+            <a href="#applyForm" class="apply-btn" onclick="setJobTitle('Australia & NZ Migration Specialist')">Apply
+              Now</a>
+          </div>
+          <p class="job-desc">MARA registered migration agent or equivalent required to handle Australian and New
+            Zealand immigration cases. Skilled migration, student visas, and partner visas are the primary focus areas.
+          </p>
+          <div class="job-requirements">
+            <span class="job-req">MARA registration</span>
+            <span class="job-req">3+ years experience</span>
+            <span class="job-req">Subclass 189/190 knowledge</span>
+          </div>
+        </div>
+
+        <div class="job-card fade-in" data-category="consulting remote">
+          <div class="job-top">
+            <div class="job-info">
+              <h3>Student Visa & Scholarship Coordinator</h3>
+              <div class="job-tags">
+                <span class="job-tag">Full-Time</span>
+                <span class="job-tag remote">Remote Available</span>
+              </div>
+              <div class="salary-range"><i class="fa-solid fa-money-bill"></i> LKR 80,000 – 130,000/month</div>
+            </div>
+            <a href="#applyForm" class="apply-btn" onclick="setJobTitle('Student Visa & Scholarship Coordinator')">Apply
+              Now</a>
+          </div>
+          <p class="job-desc">Manage student visa applications and scholarship guidance for A/L students,
+            undergraduates, and postgraduate candidates. Strong network with international universities is a plus.</p>
+          <div class="job-requirements">
+            <span class="job-req">Degree in any field</span>
+            <span class="job-req">Student visa knowledge</span>
+            <span class="job-req">University partnerships</span>
+            <span class="job-req">Excellent communication</span>
+          </div>
+        </div>
+
+        <div class="job-card fade-in" data-category="admin">
+          <div class="job-top">
+            <div class="job-info">
+              <h3>Client Relations Executive</h3>
+              <div class="job-tags">
+                <span class="job-tag">Full-Time</span>
+                <span class="job-tag">Colombo / Galle</span>
+              </div>
+              <div class="salary-range"><i class="fa-solid fa-money-bill"></i> LKR 60,000 – 90,000/month</div>
+            </div>
+            <a href="#applyForm" class="apply-btn" onclick="setJobTitle('Client Relations Executive')">Apply Now</a>
+          </div>
+          <p class="job-desc">First point of contact for new and existing clients. Handle inquiries, schedule
+            consultations, maintain CRM data, and ensure an excellent client experience from first contact through case
+            completion.</p>
+          <div class="job-requirements">
+            <span class="job-req">Diploma or Degree</span>
+            <span class="job-req">Sinhala & English</span>
+            <span class="job-req">CRM experience</span>
+            <span class="job-req">Customer service</span>
+          </div>
+        </div>
+
+        <div class="job-card fade-in" data-category="admin remote">
+          <div class="job-top">
+            <div class="job-info">
+              <h3>Digital Marketing Executive</h3>
+              <div class="job-tags">
+                <span class="job-tag">Full-Time</span>
+                <span class="job-tag remote">Hybrid</span>
+              </div>
+              <div class="salary-range"><i class="fa-solid fa-money-bill"></i> LKR 70,000 – 110,000/month</div>
+            </div>
+            <a href="#applyForm" class="apply-btn" onclick="setJobTitle('Digital Marketing Executive')">Apply Now</a>
+          </div>
+          <p class="job-desc">Manage social media, create immigration-related content, run paid ad campaigns, and
+            support lead generation through digital channels. Google Ads and Meta Ads experience required.</p>
+          <div class="job-requirements">
+            <span class="job-req">Degree in Marketing</span>
+            <span class="job-req">Social media management</span>
+            <span class="job-req">Google / Meta Ads</span>
+            <span class="job-req">Content creation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="inquiry-section" id="applyForm">
+    <div class="inquiry-container">
+
+      <div class="inquiry-header">
+        <h2>Apply Now</h2>
+        <p>Send your CV and join our growing team</p>
+      </div>
+
+      <form id="inquiryForm" enctype="multipart/form-data">
+        <input type="hidden" id="jobTitle" name="jobTitle">
+        <div class="input-group">
+          <input type="text" id="name" placeholder="Full Name" required>
+        </div>
+
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-group">
+          <input type="tel" id="phone" placeholder="Phone Number" required>
+        </div>
+
+        <div class="input-group">
+          <select required>
+            <option value="">Select Position</option>
+            <option>Immigration Consultant</option>
+            <option>Customer Support</option>
+            <option>Marketing Executive</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <textarea id="message" rows="5" placeholder="Write about your self..." required></textarea>
+        </div>
+
+        <div class="input-group">
+          <label for="cvUpload">Upload Your CV</label>
+          <input type="file" id="cvUpload" accept=".pdf,.doc,.docx" required>
+          <small>Accepted formats: PDF, DOC, DOCX (Max 5MB)</small>
+        </div>
+        <button type="submit" class="submit-btn">Apply Now</button>
+      </form>
+      <div id="successMessage"></div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2><i class="fa-solid fa-circle-question"></i> Career FAQs</h2>
+
+    <div class="faq-item">
+      <button class="faq-btn">Do I need experience?<i class="fa-solid fa-plus"></i></button>
+      <div class="faq-content">
+        <p>Experience is preferred but not mandatory. Training will be provided.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn">Is remote work available?<i class="fa-solid fa-plus"></i></button>
+      <div class="faq-content">
+        <p>Some positions offer hybrid or remote work depending on role.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn">How do I apply?<i class="fa-solid fa-plus"></i></button>
+      <div class="faq-content">
+        <p>You can apply using the application form above.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn">What qualifications do I need to apply?<i class="fa-solid fa-plus"></i></button>
+      <div class="faq-content">
+        <p>Qualifications vary by position, but good communication skills and basic computer knowledge are
+          required for most roles.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn">Will I receive training after joining?<i class="fa-solid fa-plus"></i></button>
+      <div class="faq-content">
+        <p>Yes. We provide full training and guidance to help you understand our services and work
+          processes.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-btn">When will I get a response after applying?<i class="fa-solid fa-plus"></i></button>
+      <div class="faq-content">
+        <p>Our HR team usually reviews applications within 3–7 working days and contacts shortlisted
+          candidates.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="chatbot-bubble" id="chatbotBubble" onclick="toggleChatbot()">
+    <i class="fa-solid fa-comments"></i>
+    <span class="chat-badge">1</span>
+  </div>
+  <div class="chatbot" id="chatbot">
+    <div class="chat-header">
+      <div class="chat-avatar"><i class="fa-solid fa-robot"></i></div>
+      <div>
+        <strong>Ardent AI Assistant</strong>
+        <span class="chat-status">Online • 24/7 Support</span>
+      </div>
+      <button onclick="toggleChatbot()"><i class="fa-solid fa-times"></i></button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg bot">
+        <div class="msg-bubble">👋 Hi! I'm Ardent, Welcome to Ardent Careers!</div>
+      </div>
+      <div class="chat-quick-replies">
+        <button onclick="quickReply('Current Vacancies')">💼 Vacancies</button>
+        <button onclick="quickReply('Internships')">🎓 Internships</button>
+        <button onclick="quickReply('Submit CV')">📄 Submit CV</button>
+        <button onclick="quickReply('Interview Process')">🤝 Interviews</button>
+        <button onclick="quickReply('Career Growth')">🚀 Career Growth</button>
+        <button onclick="quickReply('Contact HR')">📞 Contact HR</button>
+      </div>
+      <br>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="chatEnter(event)" />
+      <button onclick="sendChat()"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3><i class="fa-solid fa-globe"></i>Apex Trust Ardent</h3>
+        <p>Trusted immigration consultants helping individuals and families achieve their dreams in
+          Canada, Australia, UK, USA and Europe.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="canada.html">Canada</a></li>
+          <li><a href="other-countries.html">Other Countries</a></li>
+          <li><a href="legal-services.html">Legal Service</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="career.html">Career</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="consultation.html">Book Consultation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-phone"></i> +94 11 234 5678</p>
+        <p><i class="fa-solid fa-envelope"></i> info@apextrust.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Colombo, Sri Lanka</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Office Hours</h3>
+        <p>Mon - Fri : 9.00 AM - 6.00 PM</p>
+        <p>Saturday : 9.00 AM - 1.00 PM</p>
+        <p>Sunday : Closed</p>
+      </div>
+    </div>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <hr>
+    <p class="copyright"> © 2026 Apex Trust Ardent Immigration.All Rights Reserved.</p>
+  </footer>
+
+  <button id="topBtn">
+    <i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+
+</html>

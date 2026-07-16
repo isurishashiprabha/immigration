@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title> ATA Immigration | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="pageLoader">
+        <div class="loader-logo"><i class="fa-solid fa-globe"></i> Apex <span>Trust</span> Ardent</div>
+        <div class="loader-bar">
+            <div class="loader-bar-fill"></div>
+        </div>
+        <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><i class="fa-solid fa-globe"></i> Apex Trust Ardent</a>
+            <button id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="canada.html">Canada <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="canada.html#inquiry" onclick="selectService('Express Entry')">Express Entry</a></li>
+                        <li><a href="canada.html#inquiry" onclick="selectService('Provincial Nominee Program (PNP)')">Provincial Nominee</a></li>
+                        <li><a href="canada.html#inquiry" onclick="selectService('Student Visa')">Student Visa</a></li>
+                        <li><a href="canada.html#inquiry" onclick="selectService('Family Sponsorship')">Family Sponsorship</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="other-countries.html">Other Countries <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="other-countries.html?country=Australia#inquiry">Australia</a></li>
+                        <li><a href="other-countries.html?country=United%20Kingdom#inquiry">United Kingdom</a></li>
+                        <li><a href="other-countries.html?country=New%20Zealand#inquiry">New Zealand</a></li>
+                        <li><a href="other-countries.html?country=United%20States#inquiry">United States</a></li>
+                        <li><a href="other-countries.html?country=Europe#inquiry">Europe</a></li>
+                    </ul>
+                </li>
+                <li><a href="legal-services.html">Legal Service</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="consultation.html">Book Consultation</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <a href="login.html" class="login-btn"><i class="fa-solid fa-user"></i></a>
+                <button id="darkModeBtn"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero canada-hero" style="background-image: url(img/contact.jpg); 
+        margin-top: 0;
+        height: 100vh;   
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;">
+        <div class="hero-content">
+
+            <h1><i class="fa-solid fa-headset"></i> Contact Us</h1>
+            <p>We are here to help you with your immigration journey. Reach out anytime.</p>
+        </div>
+    </section>
+
+    <section class="inquiry-section">
+        <div class="inquiry-container">
+            <div class="inquiry-header">
+                <h2>Get In Touch</h2>
+                <p>Send us a message and we will get back to you soon</p>
+            </div>
+
+            <form id="contactForm">
+
+                <div class="input-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+
+                <div class="input-group">
+                    <select required>
+                        <option value="">Select Subject</option>
+                        <option>General Inquiry</option>
+                        <option>Visa Information</option>
+                        <option>Career Opportunities</option>
+                        <option>Support</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <textarea rows="5" placeholder="Write your message..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div id="successMessage"></div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Contact Information</h2>
+        <div class="service-container">
+            <div class="card">
+                <h3><br><i class="fa-solid fa-phone"></i><br>Phone</h3>
+                <p>+94 11 234 5678</p>
+            </div>
+
+            <div class="card">
+                <h3><br><i class="fa-solid fa-envelope"></i><br>Email</h3>
+                <p>info@apextrust-ardent.com</p>
+            </div>
+
+            <div class="card">
+                <h3><br><i class="fa-solid fa-location-dot"></i><br>Head Office</h3>
+                <p>Kollupitiya, Colombo 03, Sri Lanka</p>
+            </div>
+
+            <div class="card">
+                <h3><br><i class="fa-solid fa-clock"></i><br>Working Hours</h3>
+                <p>Mon - Fri: 9 AM - 6 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="find-us">
+        <h2>Find Our Locations</h2>
+        <p>We are located in Sri Lanka and Canada for your convenience.</p>
+        <div class="find-container">
+            <div class="find-card">
+                <h3>Head Office</h3>
+                <p>Kollupitiya, Colombo 03,</p>
+                <p>Sri Lanka</p>
+                <div class="map-wrapper">
+                    <div class="map-pin"></div>
+                    <iframe src="https://www.google.com/maps?q=Kollupitiya%20Colombo&output=embed" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="find-card">
+                <h3>Branch Office</h3>
+                <p>Galle, Sri Lanka</p><br>
+                <div class="map-wrapper">
+                    <div class="map-pin"></div>
+                    <iframe src="https://www.google.com/maps?q=Kollupitiya%20Colombo&output=embed" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="find-card">
+                <h3>Canada Office</h3>
+                <p>Atlantic Province, Canada</p><br>
+                <div class="map-wrapper">
+                    <div class="map-pin"></div>
+                    <iframe src="https://www.google.com/maps?q=Kollupitiya%20Colombo&output=embed" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:60px 0;background:#f8f9fc">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">SUPPORT</span>
+                <h2>Contact Our Departments</h2>
+            </div>
+            <div class="department-grid">
+                <div class="department-card">
+                    <i class="fa-solid fa-passport"></i>
+                    <h4>Canada Immigration</h4>
+                    <p>canada@apextrust-ardent.com</p>
+                    <p>+94 11 234 5678</p>
+                </div>
+
+                <div class="department-card">
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>Other Countries</h4>
+                    <p>international@apextrust-ardent.com</p>
+                    <p>+94 11 234 5678</p>
+                </div>
+
+                <div class="department-card">
+                    <i class="fa-solid fa-gavel"></i>
+                    <h4>Legal Services</h4>
+                    <p>legal@apextrust-ardent.com</p>
+                    <p>+94 11 234 5678</p>
+                </div>
+
+                <div class="department-card">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h4>Careers</h4>
+                    <p>careers@apextrust-ardent.com</p>
+                    <p>+94 11 234 5678</p>
+                </div>
+
+                <div class="department-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <h4>Support</h4>
+                    <p>support@apextrust-ardent.com</p>
+                    <p>+94 11 234 5678</p>
+                </div>
+
+                <div class="department-card">
+                    <i class="fa-solid fa-star"></i>
+                    <h4>Feedback</h4>
+                    <p>feedback@apextrust-ardent.com</p>
+                    <p>+94 11 234 5678</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="chatbot-bubble" id="chatbotBubble" onclick="toggleChatbot()">
+        <i class="fa-solid fa-comments"></i>
+        <span class="chat-badge">1</span>
+    </div>
+    <div class="chatbot" id="chatbot">
+        <div class="chat-header">
+            <div class="chat-avatar"><i class="fa-solid fa-robot"></i></div>
+            <div>
+                <strong>Ardent AI Assistant</strong>
+                <span class="chat-status">Online • 24/7 Support</span>
+            </div>
+            <button onclick="toggleChatbot()"><i class="fa-solid fa-times"></i></button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-msg bot">
+                <div class="msg-bubble">👋 Hi! I'm Ardent, Welcome to Ardent Support!</div>
+            </div>
+            <div class="chat-quick-replies">
+                <button onclick="quickReply('Phone Number')">📞 Call Us</button>
+                <button onclick="quickReply('Email Address')">📧 Email</button>
+                <button onclick="quickReply('Office Location')">📍 Location</button>
+                <button onclick="quickReply('Book Appointmen')">📅 Appointment</button>
+                <button onclick="quickReply('Business Hours')">🕒 Office Hours</button>
+                <button onclick="quickReply('Customer Support')">💬 Support</button>
+            </div>
+            <br>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="chatEnter(event)" />
+            <button onclick="sendChat()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3><i class="fa-solid fa-globe"></i>Apex Trust Ardent</h3>
+                <p>Trusted immigration consultants helping individuals and families achieve their dreams in
+                    Canada, Australia, UK, USA and Europe.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="canada.html">Canada</a></li>
+                    <li><a href="other-countries.html">Other Countries</a></li>
+                    <li><a href="legal-services.html">Legal Service</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="consultation.html">Book Consultation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +94 11 234 5678</p>
+                <p><i class="fa-solid fa-envelope"></i> info@apextrust.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Colombo, Sri Lanka</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Office Hours</h3>
+                <p>Mon - Fri : 9.00 AM - 6.00 PM</p>
+                <p>Saturday : 9.00 AM - 1.00 PM</p>
+                <p>Sunday : Closed</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <hr>
+        <p class="copyright"> © 2026 Apex Trust Ardent Immigration.All Rights Reserved.</p>
+    </footer>
+
+    <button id="topBtn">
+        <i class="fa-solid fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+
+</html>

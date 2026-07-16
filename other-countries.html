@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title> ATA Immigration | Other Countries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="pageLoader">
+        <div class="loader-logo"><i class="fa-solid fa-globe"></i> Apex <span>Trust</span> Ardent</div>
+        <div class="loader-bar">
+            <div class="loader-bar-fill"></div>
+        </div>
+        <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><i class="fa-solid fa-globe"></i> Apex Trust Ardent</a>
+            <button id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="canada.html">Canada <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="canada.html#inquiry" onclick="selectService('Express Entry')">Express Entry</a></li>
+                        <li><a href="canada.html#inquiry" onclick="selectService('Provincial Nominee Program (PNP)')">Provincial Nominee</a></li>
+                        <li><a href="canada.html#inquiry" onclick="selectService('Student Visa')">Student Visa</a></li>
+                        <li><a href="canada.html#inquiry" onclick="selectService('Family Sponsorship')">Family Sponsorship</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="other-countries.html">Other Countries <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="other-countries.html?country=Australia#inquiry">Australia</a></li>
+                        <li><a href="other-countries.html?country=United%20Kingdom#inquiry">United Kingdom</a></li>
+                        <li><a href="other-countries.html?country=New%20Zealand#inquiry">New Zealand</a></li>
+                        <li><a href="other-countries.html?country=United%20States#inquiry">United States</a></li>
+                        <li><a href="other-countries.html?country=Europe#inquiry">Europe</a></li>
+                    </ul>
+                </li>
+                <li><a href="legal-services.html">Legal Service</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="consultation.html">Book Consultation</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <a href="login.html" class="login-btn"><i class="fa-solid fa-user"></i></a>
+                <button id="darkModeBtn"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero canada-hero" style="background-image: url(img/other.jpg); 
+        margin-top: 0;
+        height: 100vh;  
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;">
+
+        <div class="hero-content">
+            <h1><i class="fa-solid fa-plane-departure"></i><br>Other Countries<br>Immigration Services</h1>
+            <p>Explore immigration, study, work, and settlement opportunities worldwide.</p>
+        </div>
+    </section>
+
+    <section class="countries" id="countries">
+        <h2>Popular Destinations</h2><br><br>
+        <div class="country-container">
+            <div class="country-card">
+                <img src="img/australia.jpg" alt="Australia">
+                <h3>🇦🇺 Australia</h3>
+                <p>Skilled Migration, Student Visa & PR Pathways</p>
+            </div>
+
+            <div class="country-card">
+                <img src="img/uk.jpg" alt="UK">
+                <h3>🇬🇧 United Kingdom</h3>
+                <p>Study, Work and Family Visas</p>
+            </div>
+
+            <div class="country-card">
+                <img src="img/new-zealand.jpg" alt="New Zealand">
+                <h3>🇳🇿 New Zealand</h3>
+                <p>Work Permits and Skilled Migration</p>
+            </div>
+
+            <div class="country-card">
+                <img src="img/us.jpg" alt="Germany">
+                <h3>🇺🇸 United States</h3>
+                <p>H-1B Work Visa, Student Visa & Green Card Pathways</p>
+            </div>
+
+            <div class="country-card">
+                <br><br><br><i class="fa-solid fa-earth-europe" style="font-size:50px;"></i>
+                <h3>🇪🇺 Europe</h3>
+                <p>Skilled Jobs, Study Programs & EU Blue Card Opportunities</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Our Immigration Services</h2>
+        <div class="service-container">
+            <div class="card">
+                <h3><i class="fa-solid fa-passport"></i><br>Visitor Visa</h3>
+                <p>Professional assistance for tourism, family visits, business trips, and short-term travel visa
+                    applications worldwide.</p>
+            </div>
+
+            <div class="card">
+                <h3><i class="fa-solid fa-graduation-cap"></i><br>Student Visa</h3>
+                <p>Professional support for studying abroad, university applications, student visas, and academic career
+                    planning.</p>
+            </div>
+
+            <div class="card">
+                <h3><i class="fa-solid fa-briefcase"></i><br>Work Visa</h3>
+                <p>Professional assistance for overseas employment opportunities, work permits, job placements, and
+                    career migration services.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="success-stories">
+        <h2>Success Stories</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p><br>"Thanks to the team, I received my Australian Student Visa
+                    within a few months."</p>
+                <h4>- Sarah M.</h4>
+            </div>
+
+            <div class="testimonial">
+                <p><br>"The UK Work Visa process was smooth and professional."</p>
+                <h4>- John D.</h4>
+            </div>
+
+            <div class="testimonial">
+                <p><br>"Excellent guidance for my family's immigration journey."</p>
+                <h4>- Ahmed K.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="inquiry-section" id="inquiry">
+        <div class="inquiry-container">
+            <div class="inquiry-header">
+                <h2>Send Us Your Inquiry</h2>
+                <p>Fill out the form below and our team will contact you shortly.</p>
+            </div>
+
+            <form id="inquiryForm" enctype="multipart/form-data">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+
+                <div class="input-group">
+                    <select id="service" required>
+                        <option value="">Select a Service</option>
+                        <option>Express Entry</option>
+                        <option>Student Visa</option>
+                        <option>Work Permit</option>
+                        <option>Family Sponsorship</option>
+                        <option>Start-Up Visa</option>
+                        <option>Citizenship Application</option>
+                        <option>Health Care Worker Migration</option>
+                        <option>Provincial Nominee Program (PNP)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <select id="country" required>
+                        <option value="">Select Country</option>
+                        <option>Australia</option>
+                        <option>United Kingdom</option>
+                        <option>New Zealand</option>
+                        <option>United States</option>
+                        <option>Europe</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" rows="5" placeholder="Write your inquiry..." required></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="cvUpload">Upload Your Documents</label>
+                    <input type="file" id="cvUpload" accept=".pdf,.doc,.docx" required>
+                    <small>Accepted formats: PDF, DOC, DOCX (Max 5MB)</small>
+                </div>
+                <button type="submit" class="submit-btn">Submit Inquiry</button>
+            </form>
+
+            <div id="successMessage"></div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2><i class="fa-solid fa-circle-question"></i> Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <button class="faq-btn">Can my spouse and children accompany me?<i class="fa-solid fa-plus"></i></button>
+            <div class="faq-content">
+                <p>Many immigration and study pathways allow eligible spouses and dependent children to accompany the
+                    primary applicant.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-btn">What documents are required for visa applications?<i
+                    class="fa-solid fa-plus"></i></button>
+            <div class="faq-content">
+                <p>Common requirements include a valid passport, educational certificates, employment records, financial
+                    documents, photographs, and supporting application forms.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-btn">Which countries do you provide immigration services for?<i
+                    class="fa-solid fa-plus"></i></button>
+            <div class="faq-content">
+                <p>We provide immigration, study, work, and visitor visa services for Australia, the United Kingdom, New
+                    Zealand, Germany, the UAE, Singapore, and several other destinations.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-btn">How long does visa processing usually take?<i class="fa-solid fa-plus"></i></button>
+            <div class="faq-content">
+                <p>Processing times depend on the country, visa category, and application volume. It can range from a
+                    few weeks to several months.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-btn">Can I apply for a student visa and work while studying?<i
+                    class="fa-solid fa-plus"></i></button>
+            <div class="faq-content">
+                <p>Many countries allow international students to work part-time while studying, subject to visa
+                    conditions and local regulations.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-btn">Do you assist with visa refusals and reapplications?<i
+                    class="fa-solid fa-plus"></i></button>
+            <div class="faq-content">
+                <p>Yes. We review refusal reasons and provide professional guidance for stronger reapplications where
+                    possible.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <div class="why-left">
+            <span class="why-badge">GLOBAL IMMIGRATION</span>
+            <h2>Your Gateway to Worldwide Opportunities</h2>
+            <p>We provide expert immigration consultation and visa support
+                for multiple countries, helping individuals and families
+                achieve their global goals.</p>
+
+            <div class="features">
+                <div class="feature"><i class="fa-solid fa-check"></i><span>Licensed Consultants</span></div>
+                <div class="feature"><i class="fa-solid fa-check"></i><span>High Success Rate</span></div>
+                <div class="feature"><i class="fa-solid fa-check"></i><span>Personalized Guidance</span></div>
+                <div class="feature"><i class="fa-solid fa-check"></i><span>Global Network</span></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="chatbot-bubble" id="chatbotBubble" onclick="toggleChatbot()">
+        <i class="fa-solid fa-comments"></i>
+        <span class="chat-badge">1</span>
+    </div>
+    <div class="chatbot" id="chatbot">
+        <div class="chat-header">
+            <div class="chat-avatar"><i class="fa-solid fa-robot"></i></div>
+            <div>
+                <strong>Ardent AI Assistant</strong>
+                <span class="chat-status">Online • 24/7 Support</span>
+            </div>
+            <button onclick="toggleChatbot()"><i class="fa-solid fa-times"></i></button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-msg bot">
+                <div class="msg-bubble">👋 Hi! I'm Ardent, Welcome to Ardent Immigration Services!</div>
+            </div>
+            <div class="chat-quick-replies">
+                <button onclick="quickReply('Canada Immigration')">🇨🇦 Canada</button>
+                <button onclick="quickReply('Australia Immigration')">🇦🇺 Australia</button>
+                <button onclick="quickReply('UK Immigration')">🇬🇧 UK</button>
+                <button onclick="quickReply('USA Immigration')">🇺🇸 USA</button>
+                <button onclick="quickReply('New Zealand Immigration')">🇳🇿 New Zealand</button>
+                <button onclick="quickReply('Book Consultation')">📅 Free Assessment</button>
+            </div>
+            <br>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="chatEnter(event)" />
+            <button onclick="sendChat()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3><i class="fa-solid fa-globe"></i>Apex Trust Ardent</h3>
+                <p>Trusted immigration consultants helping individuals and families achieve their dreams in
+                    Canada, Australia, UK, USA and Europe.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="canada.html">Canada</a></li>
+                    <li><a href="other-countries.html">Other Countries</a></li>
+                    <li><a href="legal-services.html">Legal Service</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="consultation.html">Book Consultation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +94 11 234 5678</p>
+                <p><i class="fa-solid fa-envelope"></i> info@apextrust.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Colombo, Sri Lanka</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Office Hours</h3>
+                <p>Mon - Fri : 9.00 AM - 6.00 PM</p>
+                <p>Saturday : 9.00 AM - 1.00 PM</p>
+                <p>Sunday : Closed</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <hr>
+        <p class="copyright"> © 2026 Apex Trust Ardent Immigration.All Rights Reserved.</p>
+    </footer>
+
+    <button id="topBtn">
+        <i class="fa-solid fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+
+</html>
